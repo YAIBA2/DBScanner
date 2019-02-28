@@ -83,11 +83,13 @@ class DBScanner(object):
 		except Exception as e:
 			pass
 		except KeyboardInterrupt:
-			print u'\n{}[-] 用户终止扫描...{}'.format(R, W)
+			#print u'\n{}[-] 用户终止扫描...{}'.format(R, W)
+			print u'\n{}[-] user stop scaning...{}'.format(R, W)
 			sys.exit(1)
 		finally:
 			print '-'*55
-			print u'{}[+] 扫描完成耗时 {} 秒.{}'.format(O, time.time()-self.time, W) 
+			#print u'{}[+] 扫描完成耗时 {} 秒.{}'.format(O, time.time()-self.time, W) 
+			print u'{}[+] scan completed spend {} second.{}'.format(O, time.time()-self.time, W) 
 
 def banner():
 	banner = '''
